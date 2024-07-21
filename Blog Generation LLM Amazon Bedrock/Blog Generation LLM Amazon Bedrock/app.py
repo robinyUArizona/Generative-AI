@@ -22,7 +22,7 @@ def blog_generate_using_bedrock(blogtopic:str)-> str:
         bedrock=boto3.client("bedrock-runtime", 
                              region_name="us-east-1",
                              config=botocore.config.Config(
-                                 read_timeput=300, 
+                                 read_timeout=300, 
                                  retries={'max_attempts':3}
                              ))
         response=bedrock.invoke_model(body=json.dumps(body), modelId="meta.llama3-8b-instruct-v1:0")
@@ -58,7 +58,7 @@ def lambda_handler(event, context):
     if generate_blog:
         current_time=datetime.now().strftime('%H%M%S')
         s3_key=f"blog-output/{current_time}.txt"
-        s3_bucket="aws_bedrock_course1"
+        s3_bucket="awsbedrockbloggeneration"
         save_blog_details_s3(s3_key, s3_bucket, generate_blog)
     else:
         print("No blog was generated")
