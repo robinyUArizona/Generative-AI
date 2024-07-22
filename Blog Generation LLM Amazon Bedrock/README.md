@@ -8,3 +8,6 @@
 - Once the blog content is created, it is saved to an Amazon S3 bucket.
 
   ![Alt text](https://github.com/robinyUArizona/Generative-AI/blob/main/Blog%20Generation%20LLM%20Amazon%20Bedrock/Blog%20Content%20Generation.png)
+
+  #### Reference: 
+  https://www.youtube.com/watch?v=3OP39y4dO_Y&list=PLZoTAELRMXVP5zpBfH7pab4aB1LbmCM1z&index=5
