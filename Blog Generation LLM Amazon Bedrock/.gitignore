@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.vscode
 secret_key.py 
 .Python
 build/
@@ -123,7 +124,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-genai_env/
 .env
 .venv
 env/
