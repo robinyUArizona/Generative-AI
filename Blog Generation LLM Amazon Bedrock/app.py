@@ -1,4 +1,4 @@
-import boto3
+import boto3 # to invoke foundational model
 import botocore.config
 import json
 from datetime import datetime
@@ -17,7 +17,6 @@ def blog_generate_using_bedrock(blogtopic:str)-> str:
         "top_p":0.9
     }
 
-
     try:
         bedrock=boto3.client("bedrock-runtime", 
                              region_name="us-east-1",
@@ -30,7 +29,6 @@ def blog_generate_using_bedrock(blogtopic:str)-> str:
         response_content=response.get('body').read()
         response_data=json.loads(response_content)
         print(response_data)
-
         blog_details=response_data["generation"]
         return blog_details
     
