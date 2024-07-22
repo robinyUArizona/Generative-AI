@@ -7,4 +7,4 @@
 - The Lambda function interacts with Amazon Bedrock to generate the blog content.
 - Once the blog content is created, it is saved to an Amazon S3 bucket.
 
-  ![Alt text](Blog Generation LLM Amazon Bedrock/Blog Content Generation.png)
+  ![Alt text]([Blog Generation LLM Amazon Bedrock/Blog Content Generation.png](https://github.com/robinyUArizona/Generative-AI/blob/main/Blog%20Generation%20LLM%20Amazon%20Bedrock/Blog%20Content%20Generation.png))
